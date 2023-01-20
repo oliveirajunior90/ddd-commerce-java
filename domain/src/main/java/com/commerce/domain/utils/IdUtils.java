@@ -1,4 +1,4 @@
-package com.commerce.domain.utils;
+package main.java.com.commerce.domain.utils;
 
 import java.util.UUID;
 

@@ -1,6 +1,6 @@
-package com.commerce.domain.product;
+package main.java.com.commerce.domain.product;
 
-import com.commerce.domain.Identifier;
+import main.java.com.commerce.domain.Identifier;
 import com.commerce.domain.utils.IdUtils;
 
 import java.util.Objects;

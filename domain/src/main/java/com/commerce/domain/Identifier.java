@@ -1,4 +1,4 @@
-package com.commerce.domain;
+package main.java.com.commerce.domain;
 
 public abstract class Identifier extends ValueObject {
 
