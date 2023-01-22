@@ -1,8 +1,10 @@
 .gradle
 build/
+lib
 !gradle/wrapper/gradle-wrapper.jar
 !domai/src/main/**/build/
 !domai/src/test/**/build/
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
