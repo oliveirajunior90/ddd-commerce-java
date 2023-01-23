@@ -1,4 +1,4 @@
-package com.commerce.domain;
+package br.com.commerce.domain;
 
 public abstract class ValueObject {
 }

@@ -1,4 +1,7 @@
-package com.commerce.domain;
+package br.com.commerce.domain;
+
+import br.com.commerce.domain.validation.ValidationHandler;
+import br.com.commerce.domain.Identifier;
 
 import java.util.Objects;
 
@@ -11,6 +14,7 @@ public abstract class Entity<ID extends Identifier> {
         this.id = id;
     }
 
+    public abstract void validate(ValidationHandler handler);
 
     public ID getId() {
         return id;

@@ -1,7 +1,9 @@
-package com.commerce.domain.product;
+package br.com.commerce.domain.product;
 
-import com.commerce.domain.AggregateRoot;
-import com.commerce.domain.utils.InstantUtils;
+import br.com.commerce.domain.utils.InstantUtils;
+import br.com.commerce.domain.validation.ValidationHandler;
+import br.com.commerce.domain.product.ProductID;
+import br.com.commerce.domain.AggregateRoot;
 
 import java.time.Instant;
 
@@ -25,6 +27,11 @@ public class Product extends AggregateRoot<ProductID> {
         final var now = InstantUtils.now();
         final var id = ProductID.unique();
         return new Product(id, name, price, now, now);
+    }
+
+    @Override
+    public void validate(final ValidationHandler handler) {
+        new ProductValidator(this, handler).validate();
     }
 
     public String getName() {

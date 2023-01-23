@@ -1,7 +1,7 @@
-package com.commerce.domain.product;
+package br.com.commerce.domain.product;
 
-import com.commerce.domain.Identifier;
-import com.commerce.domain.utils.IdUtils;
+import br.com.commerce.domain.Identifier;
+import br.com.commerce.domain.utils.IdUtils;
 
 import java.util.Objects;
 

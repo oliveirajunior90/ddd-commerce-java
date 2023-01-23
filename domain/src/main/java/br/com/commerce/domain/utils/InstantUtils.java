@@ -1,4 +1,4 @@
-package com.commerce.domain.utils;
+package br.com.commerce.domain.utils;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
